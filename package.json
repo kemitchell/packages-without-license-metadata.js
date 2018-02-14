@@ -1,0 +1,17 @@
+{
+  "name": "packages-without-license-metadata",
+  "version": "0.0.0",
+  "description": "licensing data on npm packages without license metadata",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "repository": "kemitchell/packages-without-license-metadata.js",
+  "files": [
+    "index.json"
+  ],
+  "scripts": {
+    "prepublish": "node build.js > index.json",
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "ajv": "^6.1.1"
+  }
+}

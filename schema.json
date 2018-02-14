@@ -1,0 +1,41 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 3
+      },
+      "version": {
+        "type": "string",
+        "minLength": 5
+      },
+      "terms": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minItems": 1
+      },
+      "spdx": {
+        "type": "string",
+        "minLength": 3
+      },
+      "comments": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minItems": 1
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "version"
+    ]
+  }
+}
