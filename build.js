@@ -24,7 +24,11 @@ var notes = {
     '2.1.1': false,
     '2.1.2': false,
     '2.2.0': false,
-    '3.0.0': {comments: ['replaced notice with "Copyright 2012-2014 Raynos"']},
+    '3.0.0': {
+      comments: [
+        'replaced notice with "Copyright 2012-2014 Raynos"'
+      ]
+    },
     '4.0.0': false,
     '4.0.1': false
   }
@@ -50,7 +54,6 @@ Object.keys(notes).forEach(function (name) {
     output.push(entry)
   })
 })
-
 
 if (module.parent) module.exports = output
 else console.log(JSON.stringify(output, null, 2))
