@@ -3,6 +3,17 @@
   "items": {
     "type": "object",
     "properties": {
+      "scope": {
+        "anyOf": [
+          {
+            "const": null
+          },
+          {
+            "type": "string",
+            "minLength": 1
+          }
+        ]
+      },
       "name": {
         "type": "string",
         "minLength": 3
@@ -34,6 +45,7 @@
     },
     "additionalProperties": false,
     "required": [
+      "scope",
       "name",
       "version"
     ]

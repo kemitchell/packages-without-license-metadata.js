@@ -40,6 +40,7 @@ Object.keys(notes).forEach(function (name) {
       if (data.spdx) spdx = data.spdx
     }
     var entry = {
+      scope: null,
       name: name,
       version: version
     }
